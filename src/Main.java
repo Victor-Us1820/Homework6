@@ -9,7 +9,17 @@ public class Main {
         if (age2 == 17) {
             System.out.println("Если возраст человека равен " + age2 + ". то он не достиг совешеннолетия, нужно немного подождать.");
         }
+
         // Задача 2
+        int temp = 3;
+
+        if (temp <= 5) {
+            System.out.println("На улице " + temp + " градуса, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
+        }
+
+        /*
         int temp1 = 3;
         if (temp1 < 5) {
             System.out.println("На улице " + temp1 + " градуса, нужно надеть шапку.");
@@ -17,8 +27,18 @@ public class Main {
         int temp2 = 15;
         if (temp1 > 5) {
             System.out.println("На улице " + temp2 + " градусов, можно идти без шапки.");
-        }
+        } */
+
         // Задача 3
+        int speed = 81;  // Можно менять: 81, 54, 60 и т.д.
+
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно.");
+        }
+
+        /*
         int speed1 = 81;
         if (speed1 > 60) {
             System.out.println("Если скорость " + speed1 + " км. в час, " + "то придется заплатить штраф.");
@@ -27,6 +47,8 @@ public class Main {
         if (speed2 < 60) {
             System.out.println("Если скорость " + speed2 + " км. в час, " + "то можно ездить спокойно.");
         }
+        */
+
         // Задача 4
         int ageOfPerson1  = 5;
         int ageOfPerson2  = 14;
@@ -44,6 +66,7 @@ public class Main {
         if (ageOfPerson4 > 24) {
             System.out.println("Если возраст человека равен " + ageOfPerson4 + " лет, то ему пора ходить на работу.");
         }
+
         // Задача 5
         int ageOfChild1 = 3;
         int ageOfChild2 = 12;
@@ -57,6 +80,7 @@ public class Main {
         if (ageOfChild3 > 14) {
             System.out.println("Если возраст ребёнка равен " + ageOfChild3 + " лет, то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
+
         // Задача 6
         int seatsOccupied = 95;
         int totalSeats = 102;
@@ -68,7 +92,32 @@ public class Main {
         } else {
             System.out.println("Вагон полностью забит. Мест нет.");
         }
+
         // Задача 7
+        int one = 8;
+        int two = 13;
+        int three = 21;
+        if (one >= two && one >= three) {
+            if (one == two && one == three) {
+                System.out.println("Все три числа равны: " + one);
+            } else if (one == two && one > three) {
+                System.out.println("Наибольшие числа: " + one + " и " + two + " (они равны).");
+            } else if (one == three && one > two) {
+                System.out.println("Наибольшие числа: " + one + " и " + three + " (они равны).");
+            } else {
+                System.out.println("Наибольшее число: " + one);
+            }
+        } else if (two >= one && two >= three) {
+            if (two == three && two > one) {
+                System.out.println("Наибольшие числа: " + two + " и " + three + " (они равны).");
+            } else {
+                System.out.println("Наибольшее число: " + two);
+            }
+        } else {
+            System.out.println("Наибольшее число: " + three);
+        }
+
+        /*
         int one = 8;
         int two = 13;
         int three = 21;
@@ -79,5 +128,6 @@ public class Main {
         } else {
             System.out.println("Наибольшее число: " + three);
         }
+         */
     }
 }
